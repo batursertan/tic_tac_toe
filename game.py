@@ -20,10 +20,10 @@ def next_turn(row, column):
             if check_winner() is False:
                 player = players[0]
                 label.config(text =(players[0] + " turn"))
-            elif check_winner():
+            elif check_winner() is True:
                 label.config(text = (players[1]+ " wins"))
             elif check_winner() == "Tie":
-                label.config(text = ("Tie"))
+                label.config(text = "Tie")
 
 def check_winner():
     
